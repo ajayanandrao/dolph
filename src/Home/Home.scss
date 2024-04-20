@@ -1,0 +1,353 @@
+@import "./../Styles/Mixin_New.scss";
+
+.drink-div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #ffff;
+
+    .navbar-div {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        max-width: 700px;
+        height: 60px;
+        // background: red;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        .navbar-item-div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 1rem;
+
+            @include respond-to(xs) {
+                justify-content: end;
+            }
+
+            .menu {
+                font-size: 24px;
+                display: none;
+
+                @include respond-to(xs) {
+                    display: block;
+                }
+            }
+        }
+
+        .navbar-item {
+            font-size: 16px;
+
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+
+        .navbar-item-icon {
+            font-size: 20px;
+        }
+    }
+
+    @include respond-to(sm) {
+        height: 1024px;
+    }
+
+    .product-container {
+        width: 100%;
+        height: 95%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        @include respond-to(sm) {
+            flex-direction: column;
+        }
+
+        @include respond-to(xs) {
+            flex-direction: column;
+            height: 95%;
+        }
+
+        .product-one {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .product-img {
+                width: 100%;
+                max-width: 500px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+
+                @include respond-to(md) {
+                    top: 50%;
+                    left: 0%;
+                    transform: translate(0%, -50%);
+                    max-width: 400px;
+                }
+
+                @include respond-to(sm) {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -20%);
+                    max-width: 400px;
+                }
+
+                @include respond-to(xs) {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -40%);
+                    max-width: 280px;
+                }
+            }
+
+            .product-g1 {
+                width: 100%;
+                max-width: 400px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-80%, -80%);
+
+                @include respond-to(md) {
+                    max-width: 300px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-80%, -95%);
+                }
+
+                @include respond-to(sm) {
+                    max-width: 300px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                @include respond-to(xs) {
+                    display: none;
+                    // max-width: 200px;
+                    // top: 0%;
+                    // left: 0%;
+                    // transform: translate(0%, 10%);
+                }
+
+            }
+
+            .product-g2 {
+                width: 100%;
+                max-width: 100px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(30%, -80%);
+
+                @include respond-to(md) {
+                    display: none;
+                }
+
+                @include respond-to(sm) {
+                    display: none;
+                }
+
+                @include respond-to(xs) {
+                    display: none;
+                }
+
+            }
+
+            .product-r1 {
+                width: 100%;
+                max-width: 400px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-90%, -90%);
+
+                @include respond-to(md) {
+                    max-width: 300px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-80%, -95%);
+                }
+
+                @include respond-to(sm) {
+                    max-width: 300px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                @include respond-to(xs) {
+                    display: none;
+                    // max-width: 200px;
+                    // top: 0%;
+                    // left: 0%;
+                    // transform: translate(0%, 10%);
+                }
+            }
+
+            .product-r2 {
+                width: 100%;
+                max-width: 100px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(30%, -80%);
+
+                @include respond-to(md) {
+                    display: none;
+                }
+
+                @include respond-to(sm) {
+                    display: none;
+                }
+
+                @include respond-to(xs) {
+                    display: none;
+                }
+            }
+        }
+
+        .product-two {
+            flex: 0.6;
+            height: 100%;
+            // background: red; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            @include respond-to(md) {
+                flex: 1;
+            }
+
+            @include respond-to(sm) {
+                flex: 1;
+            }
+
+            @include respond-to(xs) {
+                flex: 1;
+                align-items: start;
+            }
+
+            .bg-container {
+                width: 100%;
+                max-width: 400px;
+                height: 250px;
+                // transform: translate(-50%, -50%);
+                z-index: 1;
+                overflow-y: scroll;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .bg-card {
+                    width: 100%;
+                    height: 100%;
+                    padding: 1rem;
+                    line-height: 22px;
+                }
+
+                .green-btn {
+                    background: #298A08;
+                }
+
+                .green {
+                    background: #31B404;
+                }
+
+                .red {
+                    background: #B43104;
+                }
+
+                .red-btn {
+                    background: red;
+                }
+
+                .yello-btn {
+                    background: #DBA901;
+                }
+
+                .yello {
+                    background: #FFBF00;
+                }
+
+                .blue-btn {
+                    background: #363662;
+                }
+
+                .blue {
+                    background: #44447A;
+                }
+
+                .btn {
+                    border: none;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // position: absolute;
+        // top: -150px;
+        // left: 0;
+
+        // display: none;
+    }
+
+    .btn-div {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+
+        .btn-circle {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .btn-color-1 {
+            background: #31B404 !important;
+
+        }
+
+        .btn-color-2 {
+            background: #B43104 !important;
+        }
+
+        .btn-color-3 {
+            background: #FFBF00 !important;
+        }
+
+        .btn-color-4 {
+            background: #44447A !important;
+        }
+    }
+
+}

@@ -59,62 +59,26 @@ export const Home = () => {
                     </div>
                 </div>
 
-                {color == "green" ?
-                    <motion.div
-                        initial={{ y: -150 }}
-                        animate={{ y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        < img src={bg1} className='bg' alt="" />
-                    </motion.div>
-                    :
-                    null
-                }
 
-                {color == "red" ?
-                    <motion.div
-                        initial={{ y: -150 }}
-                        animate={{ y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        < img src={bg2} className='bg' alt="" />
-                    </motion.div>
-                    :
-                    null
-                }
+                < img src={bg1} className={`${color == "green" ? "bg-animation" : "bg"}`} alt="" style={{ zIndex: color == "green" ? 1 : 0, opacity: color == "green" ? 1 : 0 }} />
 
-                {color == "yellow" ?
-                    <motion.div
-                        initial={{ y: -150 }}
-                        animate={{ y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        < img src={bg3} className='bg' alt="" />
-                    </motion.div>
-                    :
-                    null
-                }
 
-                {color == "blue" ?
-                    <motion.div
-                        initial={{ y: -150 }}
-                        animate={{ y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        < img src={bg4} className='bg' alt="" />
-                    </motion.div>
-                    :
-                    null
-                }
+                < img src={bg2} className={`${color == "red" ? "bg-animation" : "bg"}`} alt="" style={{ zIndex: color == "red" ? 1 : 0, opacity: color == "red" ? 1 : 0 }} />
+
+
+                < img src={bg3} className={`${color == "yellow" ? "bg-animation" : "bg"}`} alt="" style={{ zIndex: color == "yellow" ? 1 : 0, opacity: color == "yellow" ? 1 : 0 }} />
+
+
+                < img src={bg4} className={`${color == "blue" ? "bg-animation" : "bg"}`} alt="" style={{ zIndex: color == "blue" ? 1 : 0, opacity: color == "blue" ? 1 : 0 }} />
 
 
                 <div className="product-container">
 
                     {color == "green" ?
                         <motion.div
-                            initial={{ y: -100 }}
+                            initial={{ y: -90 }}
                             animate={{ y: 0 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.6 }}
                             className="product-one">
                             <img src={green} className='product-img' alt="" />
                             <img src={g1} className='product-g1' alt="" />
@@ -127,9 +91,9 @@ export const Home = () => {
 
                     {color == "red" ?
                         <motion.div
-                            initial={{ y: -100 }}
+                            initial={{ y: -90 }}
                             animate={{ y: 0 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.6 }}
                             className="product-one">
                             <img src={red} className='product-img' alt="" />
                             <img src={r1} className='product-r1' alt="" />
@@ -141,9 +105,9 @@ export const Home = () => {
 
                     {color == "yellow" ?
                         <motion.div
-                            initial={{ y: -100 }}
+                            initial={{ y: -90 }}
                             animate={{ y: 0 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.6 }}
                             className="product-one">
                             <img src={yello} className='product-img' alt="" />
                             <img src={y1} className='product-r1' alt="" />
@@ -154,9 +118,9 @@ export const Home = () => {
 
                     {color == "blue" ?
                         <motion.div
-                            initial={{ y: -100 }}
+                            initial={{ y: -90 }}
                             animate={{ y: 0 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.6 }}
                             className="product-one">
                             <img src={blue} className='product-img' alt="" />
                             <img src={b1} className='product-r1' alt="" />

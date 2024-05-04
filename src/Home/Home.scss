@@ -82,6 +82,7 @@
             width: 100%;
             height: 100%;
             position: relative;
+            z-index: 2;
 
             .product-img {
                 width: 100%;
@@ -170,7 +171,7 @@
 
             .product-r1 {
                 width: 100%;
-                max-width: 400px;
+                max-width: 350px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -192,10 +193,7 @@
 
                 @include respond-to(xs) {
                     display: none;
-                    // max-width: 200px;
-                    // top: 0%;
-                    // left: 0%;
-                    // transform: translate(0%, 10%);
+
                 }
             }
 
@@ -268,34 +266,38 @@
 
                 .green-btn {
                     background: #298A08;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                 }
 
                 .green {
-                    background: #31B404;
+                    background: linear-gradient(150deg, #31B404, #298A08);
                 }
 
                 .red {
-                    background: #B43104;
+                    background: linear-gradient(150deg, #B43104, #B43104);
                 }
 
                 .red-btn {
                     background: red;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                 }
 
                 .yello-btn {
-                    background: #DBA901;
+                    background: #daa700;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                 }
 
                 .yello {
-                    background: #FFBF00;
+                    background: linear-gradient(150deg, #FFBF00, #DBA901);
                 }
 
                 .blue-btn {
                     background: #363662;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                 }
 
                 .blue {
-                    background: #44447A;
+                    background: linear-gradient(150deg, #44447A, #363662);
                 }
 
                 .btn {
@@ -311,12 +313,37 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        // position: absolute;
-        // top: -150px;
-        // left: 0;
+        position: absolute;
+        top: -150px;
+        left: 0;
 
-        // display: none;
     }
+
+    .bg-animation {
+        animation: identifier;
+        animation-duration: 3s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: -150px;
+        left: 0;
+    }
+
+    @keyframes identifier {
+        0% {
+            transform: translateY(-300px);
+        }
+
+        50% {
+            transform: translateY(000px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
 
     .btn-div {
         position: absolute;
@@ -324,6 +351,7 @@
         left: 50%;
         display: flex;
         transform: translate(-50%, -50%);
+        z-index: 2;
 
         .btn-circle {
             border-radius: 50%;

@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/dolph/static/css/main.50c95ca8.css",
-    "main.js": "/dolph/static/js/main.00aab818.js",
+    "main.css": "/dolph/static/css/main.63613d1f.css",
+    "main.js": "/dolph/static/js/main.b42e80b6.js",
     "static/js/453.3c7807b0.chunk.js": "/dolph/static/js/453.3c7807b0.chunk.js",
-    "static/media/bg3.png": "/dolph/static/media/bg3.09c396ddeaee0a9bf3c0.png",
-    "static/media/bg1.png": "/dolph/static/media/bg1.e244a1d36b1c2dda3242.png",
-    "static/media/bg2.png": "/dolph/static/media/bg2.4a704aa3adc191b6de4f.png",
-    "static/media/bg4.png": "/dolph/static/media/bg4.1f74a7e5dc80cd247b4e.png",
+    "static/media/bg3.png": "/dolph/static/media/bg3.b36adc48583359d0ac11.png",
+    "static/media/bg1.png": "/dolph/static/media/bg1.cf8b6d68786a78b08dbb.png",
+    "static/media/bg2.png": "/dolph/static/media/bg2.a272a0bc696fcc83c13f.png",
+    "static/media/bg4.png": "/dolph/static/media/bg4.09e61e8d7468ea336310.png",
     "static/media/a3.png": "/dolph/static/media/a3.b83ee9e36960527e67b2.png",
     "static/media/a1.webp": "/dolph/static/media/a1.34e80d172c378eb1e3e7.webp",
     "static/media/Dolph popcorn design 1-3.png": "/dolph/static/media/Dolph popcorn design 1-3.386f7ed19fb6f1358fc2.png",
@@ -19,12 +19,12 @@
     "static/media/b2.png": "/dolph/static/media/b2.8d8bb9ad768e4a4ded9d.png",
     "static/media/b1.webp": "/dolph/static/media/b1.79dfde4c34991faa9951.webp",
     "index.html": "/dolph/index.html",
-    "main.50c95ca8.css.map": "/dolph/static/css/main.50c95ca8.css.map",
-    "main.00aab818.js.map": "/dolph/static/js/main.00aab818.js.map",
+    "main.63613d1f.css.map": "/dolph/static/css/main.63613d1f.css.map",
+    "main.b42e80b6.js.map": "/dolph/static/js/main.b42e80b6.js.map",
     "453.3c7807b0.chunk.js.map": "/dolph/static/js/453.3c7807b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50c95ca8.css",
-    "static/js/main.00aab818.js"
+    "static/css/main.63613d1f.css",
+    "static/js/main.b42e80b6.js"
   ]
 }
